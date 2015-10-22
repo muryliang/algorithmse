@@ -1,3 +1,12 @@
+/*
+ * this is the quickunion function , 
+ * use a forest to implement the union operations.
+ * whenever you call union , the root of the first
+ * (which has its value equal to its index) will be
+ * a child of the root of the second value
+ *  it looks more efficient than the quickfind ,
+ *  but if tree is too tall , will be also inefficient
+ */
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

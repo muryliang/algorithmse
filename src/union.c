@@ -1,3 +1,9 @@
+/*
+ * this module implements quick find of union set,
+ * very easy , when union , just set every value equal to
+ * the first one to the value of the second one
+ * ,when want to find ,  just compare two values
+ */
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
