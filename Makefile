@@ -3,14 +3,12 @@ CFLAGS = -g -Wall -pedantic -O0
 LFLAGS = 
 LDLIBS =
 
-SRC = $(wildcard *.c)
-OBJ = $(patsubst %.c,%.o,$(SRC))
-TARGET = $(patsubst %.o,%,$(OBJ))
+SRC = $(wildcard ./src/*.c)
+TARGET = $(patsubst %.c,%,$(SRC))
 
 all: $(TARGET)
 
-$(TARGET):$(OBJ)
 
 clean:
-	rm -rf $(OBJ) $(TARGET)
+	rm -rf  $(TARGET)
 
